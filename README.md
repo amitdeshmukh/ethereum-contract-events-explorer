@@ -70,7 +70,7 @@ Currently, the app displays:
 
 - Information emitted in individual event logs
 
-![Screenshot](src/assets/contract-explorer.png)
+![Screenshot](static/contract-explorer.png)
 
 
 ## Todo
