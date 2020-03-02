@@ -1,0 +1,14 @@
+version: "3"
+services:
+  contract-explorer:
+    container_name: contract-explorer
+    restart: always
+    build: .
+    ports:
+      - 8080:8080
+    expose:
+      - '8080'
+    environment:
+      HOST: 0.0.0.0
+
+
