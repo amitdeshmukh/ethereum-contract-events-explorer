@@ -61,6 +61,11 @@ For example:
     const contractJSON = require('./CounterAct.json')
     ```
 
+### Setup for Upgradeable Proxy Contracts
+If you are using the OpenZeppelin style proxy pattern to deploy upgradeable contrats you will need to do the following:
+1. Store the ABI of the deployed Logic contract in JSON format at [./src/assets/](src/assets/)
+2. Use the address of the deployed proxy in your config's `contractAddress` property in [./src/config/index.js](src/config/index.js)
+
 ## Usage
 
 Browse to [http://localhost:8080](http://localhost:8080). Contract events will begin to stream into the app over [websockets](https://infura.io/docs/ethereum/wss/eth_subscribe) as they occur.
