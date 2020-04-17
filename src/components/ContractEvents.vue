@@ -112,6 +112,7 @@ export default {
       .then((s) => {
         // fetch event logs from startBlock
         let startBlock = s
+        console.log('Start reading at block number', startBlock)
 
         // Contract Events
         contract.events.allEvents({fromBlock: startBlock}, async (err, event) => {

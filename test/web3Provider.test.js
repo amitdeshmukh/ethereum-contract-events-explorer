@@ -12,6 +12,6 @@ const web3 = new Web3(provider)
 describe('Web3', () => {
   it('WebSocketProvider test', async () => {
     const network = await web3.eth.net.getNetworkType().then(data => { return data })
-    assert.equal(network, 'main')
+    assert.equal(network, 'rinkeby')
   })
 })
